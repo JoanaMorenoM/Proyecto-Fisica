@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 3px;
+}
+
+.contenedor{
+  display: flex;
+  flex-flow:column nowrap;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-image: url(banner-pagina-fisica.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: contain;
+    display:flex;
+    flex-flow: column nowrap;
+
+}
+h3{
+    font-size: 25px;
+    color: rgb(7, 7, 83);
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+li{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#img{
+    height: 280px;
+    width: 350px;
+    border-color: black;
+}
+.menu{
+  height: 80px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.4);
+  border-bottom:1px solid white;
+}
+
+.logo{
+     flex:0 1 auto; 
+}
+
+.logo > img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0 0 30px white;
+}
+
+.nav{
+    margin-left: 10px;
+    height: 40px;
+    flex:5 1 auto;
+
+}
+
+.nav > a{
+    color:white;
+    font-size: 15px;
+    padding: 0 3px;
+    letter-spacing: 2px;
+}
+
+.nav > a:hover, .social > a:hover{
+    color:gray;
+}
+
+.social{
+    display:flex;
+    justify-content: flex-end;
+    flex:1 1 auto;
+
+}
+.social > a{
+   font-size: 20px;
+   color:white;
+}
+
+.texto{
+    height: 500px;
+    display:flex;
+    align-items: flex-end;
+}
+
+h1{
+    font-size: 20px;
+    color:white;
+    text-align: center;
+    line-height: 1.5;
+}
+
+main{
+    display:flex;
+}
+
+.articulos{
+    background-color: rgb(105, 106, 108);
+    display:flex;
+    flex-flow:row wrap;
+    flex: 2 1 auto;
+}
+
+.article{
+  background-color: rgb(228, 231, 234);
+  flex: 1 1 40%;
+  margin: 5px 5px 0 0;
+}
+
+.article img{
+    width: 100%;
+    height: 70%;
+    border:3px ridge white;
+    box-shadow: 3px 3px 10px black;
+
+}
+
+.article h3{
+    margin-top: -35px;
+    margin-left: 5px;
+
+}
+
+.navegacion{
+    background-color: gray;
+    border:2px solid rgb(188, 187, 187);
+    flex: 1 1 100%;
+}
+
+.navegacion a{
+    color:white;
+    font-size: 12px;
+}
+
+aside{
+    background-color: gray;
+    flex: 1 1 auto;
+}
+
+aside img{
+    width: 100%;
+    height: 50%;
+}
+
+footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie{
+    background-color: rgb(119, 118, 118);
+    text-align: center;
+    color:white;
+    letter-spacing: 1.5px;
+    flex-basis: 300px;
+}
+
+
+@media(max-width:750px){
+
+  main{
+      flex-direction: column;
+  }
+
+  .menu{
+      flex-direction: column;
+      height: auto;
+  }
+
+  .nav, .social{
+      width: 90%;
+      justify-content: center;
+  }
+  .aside{
+      display:flex;
+      justify-content: center;
+      flex-direction: column;
+  }
+
+
+}
+
+@media(max-width:700px){
+ .nav {
+     text-align: center;
+ }
+ span{
+     display: none;
+ }
+}
+
+@media(max-width:600px){
+ .articulos{
+     flex-direction: column;
+ }
+
+}
+
+.LEYESDENEWTON{
+    color: #000000;
+    margin: 10px;
+    padding: 30px 0 10px;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'New Rocker', cursive;
+    text-shadow: 6px 6px 0px rgba(83,155,194,0.5);
+}
+
+.primera{
+    color: #000000;
+    margin: 10px;
+    padding: 10px 0 5px;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'New Rocker', cursive;
+    text-shadow: 6px 6px 0px rgba(83,155,194,0.5);
+}
+
+.segunda{
+    color: #000000;
+    margin: 10px;
+    padding: 10px 0 5px;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'New Rocker', cursive;
+    text-shadow: 6px 6px 0px rgba(83,155,194,0.5);
+}
+
+.tercera{
+    color: #000000;
+    margin: 10px;
+    padding: 10px 0 5px;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'New Rocker', cursive;
+    text-shadow: 6px 6px 0px rgba(83,155,194,0.5);
+}
